@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_ndbg"> <View
+    android:id="@+id/overlayCard"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="30dp"
+    android:background="#A6000000"
+    app:layout_constraintBottom_toTopOf="@+id/buttonBack"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Brew Result"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/overlayCard"
+        app:layout_constraintStart_toStartOf="@+id/overlayCard"
+        app:layout_constraintTop_toTopOf="@+id/overlayCard" />
+
+    <TextView
+        android:id="@+id/textResultInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Details about your botanical selection will appear here..."
+        android:textColor="#E0E0E0"
+        android:textSize="18sp"
+        android:lineSpacingExtra="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/overlayCard"
+        app:layout_constraintStart_toStartOf="@+id/overlayCard"
+        app:layout_constraintTop_toBottomOf="@+id/textResultTitle" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="184dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#3B3F2F"
+        android:text="RETURN TO LAB"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
